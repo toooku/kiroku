@@ -93,6 +93,7 @@ onMounted(() => {
 }
 
 .el-timeline {
+  margin-top: 40px;
   width: 60%;
 }
 
