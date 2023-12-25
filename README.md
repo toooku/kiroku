@@ -14,7 +14,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/toooku//kiroku.git
+git clone https://github.com/toooku/kiroku.git
 
 # Move into the directory
 cd kiroku
