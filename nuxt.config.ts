@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   modules: [
     '@element-plus/nuxt'
   ],
+  css: [
+    'normalize.css/normalize.css'
+  ],
   elementPlus: { /** Options */ },
   devtools: { enabled: true }
 })
