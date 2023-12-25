@@ -5,12 +5,7 @@
         <h1>kiroku</h1>
       </el-header>
       <el-main>
-        <el-form
-          label-position="top"
-          label-width="120px"
-          :model="form"
-          class="form"
-        >
+        <el-form label-position="top" label-width="120px" :model="form" class="form">
           <el-form-item class="input" label="Content">
             <el-input v-model="form.input" type="textarea" />
           </el-form-item>
@@ -20,22 +15,16 @@
         </el-form>
 
         <el-timeline :reverse="true">
-          <el-timeline-item
-            v-for="(activity, index) in entries"
-            :key="index"
-            :timestamp="activity.timestamp"
-          >
-            {{ activity.text }}
+          <el-timeline-item v-for="(activity, index) in entries" :key="index" :timestamp="activity.timestamp">
+            <div style="white-space: pre-wrap;" v-text="activity.text" />
           </el-timeline-item>
         </el-timeline>
       </el-main>
       <el-footer>
         <p class="service_name">kiroku</p>
         <p class="service_description">
-          <small
-            >"kiroku" is a support tool that saves progress updates and insights
-            to local storage.</small
-          >
+          <small>"kiroku" is a support tool that saves progress updates and insights
+            to local storage.</small>
         </p>
       </el-footer>
     </el-container>
